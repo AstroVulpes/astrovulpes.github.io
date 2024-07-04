@@ -1,9 +1,22 @@
+import React from "react";
+
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
+import Home from "./pages/home";
+import About from "./pages/about";
+import Works from "./pages/works";
+import Contact from "./pages/contact";
 
 function App() {
   return (
-    <div className="App">
+    /*<div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -18,7 +31,17 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
+    </div>*/
+    <Router>
+      <Header />
+      <Navbar />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/works" element={<Works />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
 }
 

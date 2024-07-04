@@ -1,3 +1,129 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: block;
+  --bg-color: #005adf;
+  border-bottom: 1.5px solid var(--bg-color);
+  border-left: 1.5px solid var(--bg-color);
+  border-right: 1.5px solid var(--bg-color);
+  /*border-image-source: url('./images/WindowsXPWindowBorderSolid.png');
+  border-image-width: 3px;
+  border-image-slice: 1 1 0 1;
+  border-image-repeat: round;*/
+  margin: 0;
+
+}
+
+h1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem 5vw;
+  z-index: 12;
+}
+
+h2 {
+  font-family: Tahoma, sans-serif;
+  font-size: 10pt;
+  padding: 0rem 1rem;
+  line-height: 0;
+}
+
+p {
+  font-family: Tahoma, sans-serif;
+  font-size: 10pt;
+  padding: 0rem 1rem;
+  line-height: 1.2;
+}
+
+a {
+  font-family: Tahoma, sans-serif;
+  font-size: 7pt;
+  color: #0c327d;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2b72ff;
+  text-decoration: underline;
+}
+
+hr {
+  height: 1px;
+  border-width: 0;
+  background: rgb(118, 193, 255);
+  background: -moz-linear-gradient(90deg, rgba(118, 193, 255, 1) 0%, rgba(255, 255, 255, 1) 44%);
+  background: -webkit-linear-gradient(90deg, rgba(118, 193, 255, 1) 0%, rgba(255, 255, 255, 1) 44%);
+  background: linear-gradient(90deg, rgba(118, 193, 255, 1) 0%, rgba(255, 255, 255, 1) 44%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#76c1ff", endColorstr="#ffffff", GradientType=1);
+}
+
+canvas {
+  position: relative;
+  margin: auto;
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.grid-container {
+  display: grid;
+}
+
+.grid-container--fit {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  text-align: left;
+  vertical-align: middle;
+  font-family: Tahoma, sans-serif;
+  font-size: 10pt;
+  padding: 0rem 0vw;
+}
+
+.grid-element {
+  width: 280px;
+  border: 3px hidden #ccc;
+  transition: box-shadow .3s;
+}
+
+.grid-element:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.button-close {
+  border: none;
+  background-image: url("./images/WindowsXP-CloseWindow.png");
+  display: inline-block;
+  margin: 2px 2px 0px 2px;
+  cursor: pointer;
+}
+
+.button-close:hover {
+  background-image: url("./images/WindowsXP-CloseWindow-Hover.png");
+}
+
+.button-close:focus {
+  background-image: url("./images/WindowsXP-CloseWindow-Focus.png");
+}
+
+.button-minimize {
+  border: none;
+  background-image: url("./images/WindowsXP-MinimizeWindow-Inactive.png");
+  display: inline-block;
+  margin: 2px 2px 0px 2px;
+}
+
+.button-restore {
+  border: none;
+  background-image: url("./images/WindowsXP-RestoreWindow-Inactive.png");
+  display: inline-block;
+  margin: 2px 2px 0px 2px;
+}
+
+/*
 .App {
   text-align: center;
 }
@@ -35,4 +161,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+}*/

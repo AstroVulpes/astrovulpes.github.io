@@ -7,7 +7,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 import Home from "./pages/home";
 import About from "./pages/about";
@@ -32,7 +32,7 @@ function App() {
         </a>
       </header>
     </div>*/
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Header />
       <Navbar />
       <Routes>

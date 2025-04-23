@@ -2,7 +2,7 @@ html,
 body {
     height: 100%;
     width: 100%;
-    background: #1a006b;
+    /*background: #1a006b;*/
     box-sizing: border-box;
     overflow: auto;
     border-bottom: 0;

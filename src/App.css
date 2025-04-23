@@ -18,6 +18,9 @@ body {
 
 }
 
+article {
+  --bg-color: white;
+}
 h1 {
   display: flex;
   justify-content: space-between;
